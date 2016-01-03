@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tdd:war">
+    <output-path>$USER_HOME$/OneDrive/Documents/KDG/Third year/Programmeren 4/1 - testen/tdd_oefening/target</output-path>
+    <root id="archive" name="tdd-1.0.war">
+      <element id="artifact" artifact-name="tdd:war exploded" />
+    </root>
+  </artifact>
+</component>
