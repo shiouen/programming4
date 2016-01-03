@@ -4,14 +4,19 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/tdd-testing/src" />
     <file type="web" url="file://$USER_HOME$/OneDrive/Documents/KDG/Third year/Programmeren 4/1 - testen/tdd_oefening" />
+    <file type="web" url="file://$PROJECT_DIR$/tdd-oefening" />
+    <file type="web" url="file://$PROJECT_DIR$/tdd-testing/src" />
+    <file type="web" url="file://$PROJECT_DIR$/tdd_oefening" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$USER_HOME$/OneDrive/Documents/KDG/Third year/Programmeren 4/1 - testen/tdd_oefening/pom.xml" />
         <option value="$USER_HOME$/OneDrive/Documents/KDG/Third year/Programmeren 4/1 - testen/spel/pom.xml" />
+        <option value="$PROJECT_DIR$/tdd_oefening/pom.xml" />
+        <option value="$PROJECT_DIR$/spel/pom.xml" />
+        <option value="$PROJECT_DIR$/tdd-oefening/pom.xml" />
       </list>
     </option>
   </component>
