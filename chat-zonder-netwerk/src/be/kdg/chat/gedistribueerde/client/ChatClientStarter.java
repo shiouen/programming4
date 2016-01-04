@@ -22,7 +22,7 @@ public final class ChatClientStarter {
 
             ChatServer server = (ChatServer) Naming.lookup("rmi://localhost:1099/chatserver");
             ChatClient client = new ChatClientImpl(server, name);
-            new ChatFrame(client);
+            new ChatClientFrame(client);
 
             System.out.printf("INFO: %s started", name);
         } catch (MalformedURLException e) {

@@ -5,6 +5,10 @@ import java.rmi.server.UnicastRemoteObject;
 
 import be.kdg.chat.gedistribueerde.server.ChatServer;
 
+/**
+ * Extending UnicastRemoteObject automatically exports the object,
+ * without the need for serializing and exporting before binding.
+ */
 public class ChatClientImpl extends UnicastRemoteObject implements ChatClient {
     private ChatServer chatServer;
     private TextReceiver textReceiver;

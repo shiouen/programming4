@@ -8,7 +8,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.rmi.RemoteException;
 
-public class ChatFrame extends JFrame implements TextReceiver {
+public class ChatClientFrame extends JFrame implements TextReceiver {
     private JLabel nameLabel;
     private JTextArea history;
     private JTextField messageField;
@@ -16,7 +16,7 @@ public class ChatFrame extends JFrame implements TextReceiver {
     private JButton exitButton;
     private ChatClient chatClient;
 
-    public ChatFrame(ChatClient chatClient) throws RemoteException {
+    public ChatClientFrame(ChatClient chatClient) throws RemoteException {
         this.chatClient = chatClient;
         this.chatClient.setTextReceiver(this);
         String name = this.chatClient.getName();
@@ -58,7 +58,7 @@ public class ChatFrame extends JFrame implements TextReceiver {
         this.addWindowListener(new WindowAdapter()  {
             public void windowClosing(WindowEvent windowEvent) {
                 try {
-                    ChatFrame.this.stop();
+                    ChatClientFrame.this.stop();
                 } catch (RemoteException e) {
                     // do nothing
                 }
@@ -67,7 +67,7 @@ public class ChatFrame extends JFrame implements TextReceiver {
         this.sendButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
-                    ChatFrame.this.send();
+                    ChatClientFrame.this.send();
                 } catch (RemoteException e) {
                     // do nothing
                 }
@@ -76,7 +76,7 @@ public class ChatFrame extends JFrame implements TextReceiver {
         this.exitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
-                    ChatFrame.this.exit();
+                    ChatClientFrame.this.exit();
                 } catch (RemoteException e) {
                     // do nothing
                 }
@@ -85,7 +85,7 @@ public class ChatFrame extends JFrame implements TextReceiver {
         this.messageField.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
-                    ChatFrame.this.send();
+                    ChatClientFrame.this.send();
                 } catch (RemoteException e) {
                     // do nothing
                 }
