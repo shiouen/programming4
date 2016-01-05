@@ -17,11 +17,20 @@ public class DaoInvocationHandler implements InvocationHandler {
     private final HsqlDbManager hsqlDbManager;
     private final String table;
 
-    public DaoInvocationHandler(Class target, HsqlDbManager hsqlDbManager) {
+    public DaoInvocationHandler(Class target, HsqlDbManager hsqlDbManager) throws IllegalArgumentException {
         this.target = target;
         this.hsqlDbManager = hsqlDbManager;
+
+        if (this.getPrimaryKeyAmount() != 1) {
+            throw new IllegalArgumentException("Untolerated amount of primary keys.");
+        }
+        if (this.target.getAnnotationsByType(Storable.class).length != 1) {
+            throw new IllegalArgumentException("Untolerated amount of Storable annotations.");
+        }
+
         this.table = ((Storable) target.getAnnotation(Storable.class)).table();
         this.primaryKey = this.getPrimaryKey();
+        this.primaryKey.setAccessible(true);
     }
 
     @Override
@@ -115,18 +124,22 @@ public class DaoInvocationHandler implements InvocationHandler {
 
         Object retrieved = this.target.newInstance();
 
-        for (int i = 1; i <= metaData.getColumnCount(); ++i) {
-            Field field = this.target.getDeclaredField(metaData.getColumnName(i).toLowerCase());
-            field.setAccessible(true);
+        try {
+            for (int i = 1; i <= metaData.getColumnCount(); ++i) {
+                Field field = this.target.getDeclaredField(metaData.getColumnName(i).toLowerCase());
+                field.setAccessible(true);
 
-            if (field.getType().equals(String.class)) {
-                field.set(retrieved, result.getString(i));
-            } else {
-                field.setInt(retrieved, Integer.parseInt(result.getString(i)));
+                if (field.getType().equals(String.class)) {
+                    field.set(retrieved, result.getString(i));
+                } else {
+                    field.setInt(retrieved, Integer.parseInt(result.getString(i)));
+                }
             }
-        }
 
-        return retrieved;
+            return retrieved;
+        } catch (SQLException e) {
+            return null;
+        }
     }
 
     private void update(Object instance) throws IllegalAccessException {
@@ -169,4 +182,14 @@ public class DaoInvocationHandler implements InvocationHandler {
         }
         return null;
     }
+    private int getPrimaryKeyAmount() {
+        int amount = 0;
+        for (Field field : target.getDeclaredFields()) {
+            if (field.isAnnotationPresent(Id.class)) {
+                ++amount;
+            }
+        }
+        return amount;
+    }
+
 }
