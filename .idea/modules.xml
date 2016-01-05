@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/chat-zonder-netwerk/chat-zonder-netwerk.iml" filepath="$PROJECT_DIR$/chat-zonder-netwerk/chat-zonder-netwerk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reflection/reflection.iml" filepath="$PROJECT_DIR$/reflection/reflection.iml" />
       <module fileurl="file://$PROJECT_DIR$/spel/spel.iml" filepath="$PROJECT_DIR$/spel/spel.iml" />
       <module fileurl="file://$USER_HOME$/OneDrive/Documents/KDG/Third year/Programmeren 4/1 - testen/spel/spel.iml" filepath="$USER_HOME$/OneDrive/Documents/KDG/Third year/Programmeren 4/1 - testen/spel/spel.iml" />
       <module fileurl="file://$PROJECT_DIR$/tdd-oefening/tdd.iml" filepath="$PROJECT_DIR$/tdd-oefening/tdd.iml" />
