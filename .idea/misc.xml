@@ -5,7 +5,9 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$USER_HOME$/OneDrive/Documents/KDG/Third year/Programmeren 4/1 - testen/tdd_oefening" />
+    <file type="web" url="file://$PROJECT_DIR$/tdd" />
     <file type="web" url="file://$PROJECT_DIR$/tdd-oefening" />
+    <file type="web" url="file://$PROJECT_DIR$/tdd-security" />
     <file type="web" url="file://$PROJECT_DIR$/tdd-testing/src" />
     <file type="web" url="file://$PROJECT_DIR$/tdd_oefening" />
   </component>
@@ -18,6 +20,8 @@
         <option value="$PROJECT_DIR$/spel/pom.xml" />
         <option value="$PROJECT_DIR$/tdd-oefening/pom.xml" />
         <option value="$PROJECT_DIR$/reflection/pom.xml" />
+        <option value="$PROJECT_DIR$/tdd/pom.xml" />
+        <option value="$PROJECT_DIR$/tdd-security/pom.xml" />
       </list>
     </option>
   </component>

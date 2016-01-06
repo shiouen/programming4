@@ -36,11 +36,19 @@
         <processorPath useClasspath="true" />
         <module name="reflection" />
       </profile>
+      <profile default="false" name="Annotation profile for tdd-security" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="tdd-security" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="reflection" target="1.8" />
       <module name="spel" target="1.8" />
       <module name="tdd" target="1.8" />
+      <module name="tdd-security" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
