@@ -28,17 +28,17 @@ public class LoginController {
     public ModelAndView login(@RequestParam(value = "username", required = true) String username,
                               @RequestParam(value = "password", required = true) String password,
                               ModelAndView modelAndView) {
-        boolean validLogin = this.userService.login(username, password);
-        boolean loginAsRoot = this.userService.isRoot(username);
-
-        if (validLogin && loginAsRoot) {
-            modelAndView.setViewName("redirect:/add-user");
-        } else if (validLogin){
-            modelAndView.setViewName("redirect:/add-favorite");
-        } else {
-            modelAndView.setViewName("login");
-            modelAndView.addObject("error", "Wrong username or password.");
-        }
+//        boolean validLogin = this.userService.login(username, password);
+//        boolean loginAsRoot = this.userService.isRoot(username);
+//
+//        if (validLogin && loginAsRoot) {
+//            modelAndView.setViewName("redirect:/add-user");
+//        } else if (validLogin){
+//            modelAndView.setViewName("redirect:/add-favorite");
+//        } else {
+//            modelAndView.setViewName("login");
+//            modelAndView.addObject("error", "Wrong username or password.");
+//        }
         return modelAndView;
     }
 }
