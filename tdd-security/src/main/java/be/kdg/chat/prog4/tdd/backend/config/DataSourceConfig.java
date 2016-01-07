@@ -9,10 +9,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
  * using ;DB_CLOSE_DELAY=-1 options to keep data for life-time of JVM process.
  */
 @Configuration
-public class DataSourceConfig  {
+public class DataSourceConfig {
     @Bean
-    public BCryptPasswordEncoder passwordEncoder()
-    {
+    public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 }

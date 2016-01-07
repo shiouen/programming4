@@ -1,14 +1,15 @@
 package be.kdg.chat.prog4.tdd.frontend.controller;
 
-import be.kdg.chat.prog4.tdd.backend.service.FavoriteService;
-import be.kdg.chat.prog4.tdd.backend.service.UserService;
 import be.kdg.chat.prog4.tdd.backend.model.User;
+import be.kdg.chat.prog4.tdd.backend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import be.kdg.chat.prog4.tdd.backend.service.FavoriteService;
 
 @Controller
 public class UserController {
@@ -54,7 +55,7 @@ public class UserController {
 
     @RequestMapping(value = "/remove-user", method = RequestMethod.POST)
     public ModelAndView removeUser(@RequestParam(value = "username", required = true) String username,
-                                ModelAndView modelAndView) {
+                                   ModelAndView modelAndView) {
         User user = this.userService.getPrincipal();
 
         if (this.userService.isRoot(user.getUsername())) {

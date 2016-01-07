@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/tdd.iml" filepath="$PROJECT_DIR$/tdd.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tdd_oefening/test.iml" filepath="$PROJECT_DIR$/tdd_oefening/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tdd-security.iml" filepath="$PROJECT_DIR$/tdd-security.iml" />
     </modules>
   </component>
 </project>

@@ -12,10 +12,10 @@ import org.springframework.context.annotation.Import;
 
 @Configuration
 @ComponentScan(
-        basePackages = " be.kdg.chat.prog4.tdd.backend",
+        basePackages = "be.kdg.chat.prog4.tdd.backend",
         excludeFilters = {
                 @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Configuration.class)
         }
 )
-//@Import({ DataSourceConfig.class })
-public class BackendContextConfig  { }
+@Import({ DataSourceConfig.class })
+public class BackendContextConfig { }

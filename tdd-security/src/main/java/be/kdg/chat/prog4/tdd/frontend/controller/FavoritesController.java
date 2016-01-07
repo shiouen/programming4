@@ -1,6 +1,6 @@
 package be.kdg.chat.prog4.tdd.frontend.controller;
 
-import be.kdg.chat.prog4.tdd.backend.service.FavoriteService;
+import be.kdg.chat.prog4.tdd.backend.model.User;
 import be.kdg.chat.prog4.tdd.backend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import be.kdg.chat.prog4.tdd.backend.model.User;
+import be.kdg.chat.prog4.tdd.backend.service.FavoriteService;
 
 @Controller
 public class FavoritesController {

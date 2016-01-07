@@ -15,7 +15,7 @@ public class DispatcherServletInitializer extends AbstractAnnotationConfigDispat
     @Override
     protected Class<?>[] getServletConfigClasses()
     {
-        return new Class<?>[]{ /*WebContextConfig.class*/ };
+        return new Class<?>[]{ WebContextConfig.class };
     }
 
     @Override
