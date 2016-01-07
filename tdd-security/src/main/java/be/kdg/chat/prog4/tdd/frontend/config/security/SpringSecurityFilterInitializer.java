@@ -5,8 +5,7 @@ import org.springframework.security.web.context.AbstractSecurityWebApplicationIn
 /**
  * Activates Spring's Filter to enable Spring Security
  */
-public class SpringSecurityFilterInitializer extends AbstractSecurityWebApplicationInitializer
-{
+public class SpringSecurityFilterInitializer extends AbstractSecurityWebApplicationInitializer  {
     /*
     Equivalent from following old school XML - config fragment.
 

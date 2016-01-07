@@ -1,12 +1,14 @@
 package be.kdg.chat.prog4.tdd.backend.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.LinkedList;
+import java.util.Arrays;
 import java.util.List;
 
 import be.kdg.chat.prog4.tdd.backend.dao.UserDao;
@@ -72,6 +74,8 @@ public class UserService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = this.getUser(username);
-        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), new LinkedList<>());
+
+        GrantedAuthority[] authorities = { new SimpleGrantedAuthority(user.isRoot() ? "ADMIN" : "USER") };
+        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), Arrays.asList(authorities));
     }
 }

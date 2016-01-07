@@ -4,8 +4,8 @@ import be.kdg.chat.prog4.tdd.backend.config.BackendContextConfig;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
-import be.kdg.chat.prog4.tdd.frontend.config.security.MultiHttpSecurityConfig;
+import be.kdg.chat.prog4.tdd.frontend.config.security.SecurityConfig;
 
 @Configuration
-@Import(value = { BackendContextConfig.class, MultiHttpSecurityConfig.class })
+@Import(value = { BackendContextConfig.class, SecurityConfig.class })
 public class RootContextConfig { }
