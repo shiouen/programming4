@@ -5,7 +5,7 @@
   <artifactId>tdd</artifactId>
   <packaging>war</packaging>
   <version>1.0</version>
-  <name>test driven design demo</name>
+  <name>TddDemo</name>
   <url>http://www.kdg.be</url>
     <reporting>
         <plugins>
