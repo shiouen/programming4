@@ -15,11 +15,11 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/be/kdg/chat/prog4/tdd/backend/config/BackendContextConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/be/kdg/chat/prog4/tdd/backend/config/DataSourceConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/security/MultiHttpSecurityConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/RootContextConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/WebContextConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/be/kdg/prog4/tdd/backend/config/BackendContextConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/be/kdg/prog4/tdd/backend/config/DataSourceConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/be/kdg/prog4/tdd/frontend/config/RootContextConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/be/kdg/prog4/tdd/frontend/config/security/SecurityConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/be/kdg/prog4/tdd/frontend/config/WebContextConfig.java</file>
         </fileset>
       </configuration>
     </facet>

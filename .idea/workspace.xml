@@ -2,71 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cf1c66f-5a17-4804-a493-7d4d5113c3c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/config/security/OnAuthenticationSuccesHandler.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/security/onAuthenticationSuccesHandler.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spel/src/main/java/be/kdg/chat/prog4/spel/Dice.java" afterPath="$PROJECT_DIR$/spel/src/main/java/be/kdg/prog4/spel/Dice.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spel/src/main/java/be/kdg/chat/prog4/spel/Game.java" afterPath="$PROJECT_DIR$/spel/src/main/java/be/kdg/prog4/spel/Game.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spel/src/test/java/be/kdg/chat/prog4/spel/TestDice.java" afterPath="$PROJECT_DIR$/spel/src/test/java/be/kdg/prog4/spel/TestDice.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spel/src/test/java/be/kdg/chat/prog4/spel/TestDiceConstruction.java" afterPath="$PROJECT_DIR$/spel/src/test/java/be/kdg/prog4/spel/TestDiceConstruction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spel/src/test/java/be/kdg/chat/prog4/spel/TestGame.java" afterPath="$PROJECT_DIR$/spel/src/test/java/be/kdg/prog4/spel/TestGame.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spel/src/test/java/be/kdg/chat/prog4/spel/TestGameConstruction.java" afterPath="$PROJECT_DIR$/spel/src/test/java/be/kdg/prog4/spel/TestGameConstruction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spel/src/test/resources/be/kdg/chat/prog4/spel/context.xml" afterPath="$PROJECT_DIR$/spel/src/test/resources/be/kdg/prog4/spel/context.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/backend/config/BackendContextConfig.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/backend/config/BackendContextConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/backend/config/DataSourceConfig.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/backend/config/DataSourceConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/backend/dao/UserDao.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/backend/dao/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/backend/dao/UserDaoWithMap.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/backend/dao/UserDaoWithMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/backend/model/User.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/backend/model/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/backend/service/FavoriteService.java" afterPath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/prog4/tdd/backend/service/FavoriteService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/backend/service/UserService.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/backend/service/UserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/DispatcherServletInitializer.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/config/DispatcherServletInitializer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/RootContextConfig.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/config/RootContextConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/WebContextConfig.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/config/WebContextConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/security/Authenticator.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/config/security/Authenticator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/security/SecurityConfig.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/config/security/SecurityConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/config/security/SpringSecurityFilterInitializer.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/config/security/SpringSecurityFilterInitializer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/controller/FavoritesController.java" afterPath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/prog4/tdd/frontend/FavoritesController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/controller/HomeController.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/controller/HomeController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/controller/LoginController.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/controller/LoginController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/chat/prog4/tdd/frontend/controller/UserController.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/controller/UserController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/chat/prog4/tdd/backend/datasources/address.sql" afterPath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/address.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/chat/prog4/tdd/backend/datasources/bid.sql" afterPath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/bid.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/chat/prog4/tdd/backend/datasources/item.sql" afterPath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/item.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/chat/prog4/tdd/backend/datasources/person.sql" afterPath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/person.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/chat/prog4/tdd/backend/datasources/repair.sql" afterPath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/repair.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/chat/prog4/tdd/backend/datasources/repairdetails.sql" afterPath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/repairdetails.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/chat/prog4/tdd/backend/datasources/role.sql" afterPath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/role.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/chat/prog4/tdd/backend/datasources/schema.sql" afterPath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/schema.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/chat/prog4/tdd/backend/datasources/user.sql" afterPath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/user.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/chat/prog4/tdd/TestFavorites.java" afterPath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/prog4/tdd/TestFavorites.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/chat/prog4/tdd/config/TestContextConfig.java" afterPath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/prog4/tdd/config/TestContextConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/chat/prog4/tdd/integration/ITfavoriteScreen.java" afterPath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/prog4/tdd/integration/ITfavoriteScreen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/chat/prog4/tdd/integration/ITloginRoot.java" afterPath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/prog4/tdd/integration/ITloginRoot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/chat/prog4/tdd/integration/ITloginScreen.java" afterPath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/prog4/tdd/integration/ITloginScreen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/chat/prog4/tdd/integration/ITloginUser.java" afterPath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/prog4/tdd/integration/ITloginUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/chat/prog4/tdd/integration/ITroot.java" afterPath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/prog4/tdd/integration/ITroot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/chat/prog4/tdd/integration/ITuser.java" afterPath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/prog4/tdd/integration/ITuser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/chat/prog4/tdd/integration/ITuserScreen.java" afterPath="$PROJECT_DIR$/tdd-security/src/test/java/be/kdg/prog4/tdd/integration/ITuserScreen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/chat/prog4/tdd/backend/dao/UserDao.java" afterPath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/prog4/tdd/backend/dao/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/chat/prog4/tdd/backend/dao/UserDaoWithMap.java" afterPath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/prog4/tdd/backend/dao/UserDaoWithMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/chat/prog4/tdd/backend/model/User.java" afterPath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/prog4/tdd/backend/model/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/chat/prog4/tdd/backend/service/FavoriteService.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/backend/service/FavoriteService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/chat/prog4/tdd/backend/service/UserService.java" afterPath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/prog4/tdd/backend/service/UserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/chat/prog4/tdd/frontend/FavoritesController.java" afterPath="$PROJECT_DIR$/tdd-security/src/main/java/be/kdg/prog4/tdd/frontend/controller/FavoritesController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/chat/prog4/tdd/frontend/UserController.java" afterPath="$PROJECT_DIR$/tdd/src/main/java/be/kdg/prog4/tdd/frontend/UserController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/chat/prog4/tdd/TestFavorites.java" afterPath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/prog4/tdd/TestFavorites.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/chat/prog4/tdd/integratie/ITfavoriteScreen.java" afterPath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/prog4/tdd/integratie/ITfavoriteScreen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/chat/prog4/tdd/integratie/ITloginRoot.java" afterPath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/prog4/tdd/integratie/ITloginRoot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/chat/prog4/tdd/integratie/ITloginScreen.java" afterPath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/prog4/tdd/integratie/ITloginScreen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/chat/prog4/tdd/integratie/ITloginUser.java" afterPath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/prog4/tdd/integratie/ITloginUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/chat/prog4/tdd/integratie/ITroot.java" afterPath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/prog4/tdd/integratie/ITroot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/chat/prog4/tdd/integratie/ITuser.java" afterPath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/prog4/tdd/integratie/ITuser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/chat/prog4/tdd/integratie/ITuserScreen.java" afterPath="$PROJECT_DIR$/tdd/src/test/java/be/kdg/prog4/tdd/integratie/ITuserScreen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tdd/src/test/resources/be/kdg/chat/prog4/tdd/testcontext.xml" afterPath="$PROJECT_DIR$/tdd/src/test/resources/be/kdg/prog4/tdd/testcontext.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/address.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/bid.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/item.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/person.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/repair.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/repairdetails.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/role.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/schema.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tdd-security/src/main/resources/be/kdg/prog4/tdd/backend/datasources/user.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdd/pom.xml" afterPath="$PROJECT_DIR$/tdd/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdd/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/tdd/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdd/src/main/webapp/WEB-INF/springservlet-servlet.xml" afterPath="$PROJECT_DIR$/tdd/src/main/webapp/WEB-INF/springservlet-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdd-security/tdd-security.iml" afterPath="$PROJECT_DIR$/tdd-security/tdd-security.iml" />
     </list>
     <ignored path="programming4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -196,37 +143,13 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
       </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="spel" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="spel" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -253,7 +176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -265,12 +187,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15360501" />
     <property name="project.structure.side.proportion" value="0.47816092" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -278,15 +201,13 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development\Repositories\Git\programming4\reflection\lib" />
+      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing\src\main" />
+      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Development\Repositories\Git\programming4\tdd-security\src\main\java\be\kdg\chat\prog4\tdd\frontend\config" />
-      <recent name="D:\Development\Repositories\Git\programming4\chat-zonder-netwerk\src\be\kdg\chat\gedistribueerde\p2p" />
-      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing\src" />
-      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing\src\test" />
-      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing\src\test\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="be.kdg.chat.prog4.tdd.backend.config" />
@@ -294,10 +215,12 @@
       <recent name="be.kdg.chat.gedistribueerde.server" />
       <recent name="be.kdg.chat.gedistribueerde.client" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Development\Repositories\Git\programming4\reflection\lib" />
-      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing\src\main" />
-      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development\Repositories\Git\programming4\tdd-security\src\main\java\be\kdg\chat\prog4\tdd\frontend\config" />
+      <recent name="D:\Development\Repositories\Git\programming4\chat-zonder-netwerk\src\be\kdg\chat\gedistribueerde\p2p" />
+      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing\src" />
+      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing\src\test" />
+      <recent name="C:\Users\Olivier\Development\Repositories\Git\programming4\tdd-testing\src\test\java" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in spel">
@@ -387,6 +310,65 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -614,6 +596,7 @@
       <workItem from="1452209367567" duration="520000" />
       <workItem from="1452221409601" duration="1249000" />
       <workItem from="1452222745388" duration="638000" />
+      <workItem from="1452340837761" duration="86000" />
     </task>
     <servers />
   </component>
@@ -650,37 +633,37 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118161000" />
+    <option name="totallyTimeSpent" value="118247000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19114584" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23759791" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2325" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23072916" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40169132" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40169132" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23759791" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -911,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2245283">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,9 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,9 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,9 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,9 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,9 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6219512">
           <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,9 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3915989">
           <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1041,9 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,13 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1093,9 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,9 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1113,9 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2506775">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19245283">
           <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,12 +1122,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>tdd-security</last-edited>
+          <last-edited>Spring|tdd-security</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.47816092" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
