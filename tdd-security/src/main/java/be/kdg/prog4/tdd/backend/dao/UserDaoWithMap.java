@@ -5,8 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import be.kdg.prog4.tdd.backend.model.User;
 import org.springframework.stereotype.Repository;
+
+import be.kdg.prog4.tdd.backend.model.User;
 
 @Repository
 public class UserDaoWithMap implements UserDao {

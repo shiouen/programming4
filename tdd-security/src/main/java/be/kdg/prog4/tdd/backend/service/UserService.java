@@ -3,34 +3,34 @@ package be.kdg.prog4.tdd.backend.service;
 import be.kdg.prog4.tdd.backend.dao.UserDao;
 import be.kdg.prog4.tdd.backend.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
 import java.util.List;
 
 @Service
-public class UserService implements UserDetailsService {
-    private UserDao userDao;
+public class UserService {
+    private final UserDao userDao;
 
-    private static User principal;
+    private final String root;
+    private final String pwd;
 
-    private final String root = "root";
-    private final String pwd = "rootpasswd";
+    private final PasswordEncoder passwordEncoder;
 
     @Autowired
-    public UserService(UserDao userDao) {
+    public UserService(UserDao userDao, PasswordEncoder passwordEncoder) {
         this.userDao = userDao;
+        this.passwordEncoder = passwordEncoder;
+
+        this.root = "root";
+        this.pwd = this.passwordEncoder.encode("rootpasswd");
+
         this.userDao.create(new User(this.root, this.pwd, true));
     }
 
     public void addUser(String rootName, String rootPassword, String username, String password) {
-        if (rootName.equals(this.root) && rootPassword.equals(this.pwd)) {
-            User user = new User(username, password);
+        if (this.validate(rootName, rootPassword, true)) {
+            User user = new User(username, this.passwordEncoder.encode(password));
             this.userDao.create(user);
         }
     }
@@ -43,12 +43,10 @@ public class UserService implements UserDetailsService {
     }
 
     public void removeUser(String rootName, String rootPassword, String username) {
-        if (rootName.equals(this.root) && rootPassword.equals(this.pwd)) {
+        if (this.validate(rootName, rootPassword, true)) {
             this.userDao.delete(username);
         }
     }
-
-    public User getPrincipal() { return principal; }
 
     public boolean isRoot(String username) {
         return this.isUser(username) ? this.getUser(username).isRoot() : false;
@@ -57,24 +55,16 @@ public class UserService implements UserDetailsService {
         return this.getUser(username) != null;
     }
 
-    public boolean login(String username, String password) {
-        boolean succes = this.validate(username, password);
-        principal = this.getUser(username);
-        return succes;
-    }
-
     public boolean validate(String username, String password) {
+        if (!this.isUser(username)) { return false; }
+
         User user = this.getUser(username);
-        if (user == null) { return false; }
-        if (!user.getPassword().equals(password)) { return false; }
-        return true;
+
+        return this.passwordEncoder.matches(password, user.getPassword());
     }
+    public boolean validate(String username, String password, boolean isRoot) {
+        if (this.isRoot(username) != isRoot) { return false; }
 
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = this.getUser(username);
-
-        GrantedAuthority[] authorities = { new SimpleGrantedAuthority(user.isRoot() ? "ADMIN" : "USER") };
-        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), Arrays.asList(authorities));
+        return this.validate(username, password);
     }
 }

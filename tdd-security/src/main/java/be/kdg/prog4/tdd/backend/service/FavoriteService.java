@@ -11,8 +11,6 @@ public class FavoriteService {
     @Autowired
     private UserService users;
 
-    public FavoriteService() { }
-
     public void addFavorite(String username, String password, String favorite) {
         if (this.users.validate(username, password)) {
             this.users.getUser(username).addFavorite(favorite);

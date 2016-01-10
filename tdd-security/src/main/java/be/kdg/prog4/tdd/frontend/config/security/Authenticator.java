@@ -11,26 +11,25 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 
+import be.kdg.prog4.tdd.backend.service.LoginService;
 import be.kdg.prog4.tdd.backend.service.UserService;
 
 @Component
 public class Authenticator implements AuthenticationProvider {
-    UserService userService;
-
     @Autowired
-    public Authenticator(UserService userService) {
-        this.userService = userService;
-    }
+    private LoginService loginService;
+    @Autowired
+    private UserService userService;
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String name = authentication.getName();
         String password = authentication.getCredentials().toString();
 
-        if (this.userService.login(name, password)) {
+        if (this.loginService.login(name, password)) {
             GrantedAuthority[] authorities = { new SimpleGrantedAuthority("ROLE_USER") };
 
-            if (userService.getUser(name).isRoot()) {
+            if (this.userService.isRoot(name)) {
                 authorities[0] = new SimpleGrantedAuthority("ROLE_ADMIN");
             }
             UsernamePasswordAuthenticationToken t = new UsernamePasswordAuthenticationToken(name, password, Arrays.asList(authorities));

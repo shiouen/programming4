@@ -13,7 +13,8 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(
         basePackages = "be.kdg.prog4.tdd.frontend",
         excludeFilters = {
-                @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Configuration.class)
+                @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Configuration.class),
+                @ComponentScan.Filter(type = FilterType.REGEX, pattern = "be.kdg.prog4.tdd.frontend.config.security.*")
         }
 )
 public class WebContextConfig extends WebMvcConfigurerAdapter {

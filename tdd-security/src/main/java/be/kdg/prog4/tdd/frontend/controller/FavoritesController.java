@@ -9,22 +9,18 @@ import org.springframework.web.servlet.ModelAndView;
 
 import be.kdg.prog4.tdd.backend.model.User;
 import be.kdg.prog4.tdd.backend.service.FavoriteService;
-import be.kdg.prog4.tdd.backend.service.UserService;
+import be.kdg.prog4.tdd.backend.service.LoginService;
 
 @Controller
 public class FavoritesController {
-    private final FavoriteService favoriteService;
-    private final UserService userService;
-
     @Autowired
-    public FavoritesController(FavoriteService favoriteService, UserService userService) {
-        this.favoriteService = favoriteService;
-        this.userService = userService;
-    }
+    private FavoriteService favoriteService;
+    @Autowired
+    private LoginService loginService;
 
     @RequestMapping(value = "/add-favorite", method = RequestMethod.GET)
     public ModelAndView addFavorite(ModelAndView modelAndView) {
-        User user = this.userService.getPrincipal();
+        User user = this.loginService.getPrincipal();
 
         modelAndView.setViewName("add-favorite");
         modelAndView.addObject("user", user);
@@ -36,9 +32,11 @@ public class FavoritesController {
     @RequestMapping(value = "/add-favorite", method = RequestMethod.POST)
     public ModelAndView addFavorite(@RequestParam(value = "favorite", required = true) String favorite,
                                     ModelAndView modelAndView) {
-        User user = this.userService.getPrincipal();
+        User user = this.loginService.getPrincipal();
+
         this.favoriteService.addFavorite(user.getUsername(), user.getPassword(), favorite);
         modelAndView.setViewName("redirect:/add-favorite");
+
         return modelAndView;
     }
 }
